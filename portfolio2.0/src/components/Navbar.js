@@ -14,7 +14,6 @@ function Navbar() {
     <div className="header">
       <div className="navbar">
         <img className="logo" src={logo} alt="logo" />
-        {/* <logotype className="logotype">neetnet.io</logotype> */}
         <div className="hamburger" onClick={handleClick}>
           {click ? <FaTimes size={32} /> : <FaBars size={28} />}
         </div>
