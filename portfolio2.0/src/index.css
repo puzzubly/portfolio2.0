@@ -6,7 +6,9 @@
   --secondary-color: rgb(192,192,192);
   --secondary-dark: rgb(37, 37, 37);
   --overlay: rgba(0, 0, 0, 0.7);
+  /* min-height: 100vh; */
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,6 +21,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.2rem;
   /* line-height: 1.2rem; */
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
 }
 code {
   font-family: 'Poppins', sans-serif,

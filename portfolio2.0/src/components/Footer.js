@@ -24,7 +24,6 @@ function Footer() {
           </li>
         </ul>
         <div>
-          {/* <span className="line"></span> */}
           <p>2022 neetnet.io All rights reserved</p>
         </div>
       </div>

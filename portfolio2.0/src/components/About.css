@@ -1,91 +1,101 @@
 .about {
   background-color: #f8f8f8;
   margin: auto;
-  padding: 8rem 1rem 0 1rem;
+  padding: 10rem 1rem 1rem 1rem;
   width: 100%;
   height: 90vh;
 }
 .about .container {
   /* width: 900px; */
-  display: flex;
-  margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+.about .container .col-1 {
+  display: flex;
+  justify-content: right;
+  margin-right: 2rem;
+  margin-top: 3rem;
+}
+.about .card {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  width: 300px;
+}
+.about .container .image-wrap {
+  display: flex;
+}
 .about .container img {
   padding: 1rem;
-  width: 40vh;
+  max-width: 100%;
   border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: right;
 }
 .about h2 {
   font-size: 4rem;
   margin-bottom: 1.8rem;
 }
-/* .about .line {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: left;
-  margin-top: 1rem;
-} */
-
 .about .col-2 {
   display: flex;
   flex-direction: column;
-  padding: 3rem;
+  padding: 2rem;
   height: 100px;
 }
 .about .col-2 p {
   padding: 0.4rem;
-  font-size: 0.95rem;
-  line-height: 1.55rem;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
 }
 .about .button {
   margin-top: 1.4rem;
   margin-top: 1rem;
 }
 
-@media screen and (max-width: 940px) {
-  .about .container {
+@media screen and 
+/* (max-width: 940px) */
+(max-width:767px) 
+{
+  .about {
+    display: grid;
     grid-template-columns: 1fr;
+    min-height: 1300px;
   }
   .about .container {
+    display: flex;
+    flex-direction: column;
+    /* padding: 26px; */
     width: auto;
-    padding: 22px;
+    height: auto;
   }
-  .about .container .image-wrap {
+  .about .container .col-1 {
     display: flex;
-    flex-direction: row;
-    justify-content:right;
+    margin-right: 2rem;
+    margin-top: -1.7rem;
   }
-  .about .container img {
-    width: 20vh;
-  }
-  .about .container .col-2 {
-    padding: 0;
+  .about .container .col-1 .card {
     display: flex;
-    justify-content: left;
+    width: 200px;
+  }
+  .about img {
+    padding: 1rem;
+    border-radius: 50%;
   }
   .about h2 {
     font-size: 2rem;
     margin-top: 1rem;
   }
-  /* .col-2-container {
+  .about .container .col-2 {
     display: flex;
-    align-items: center;
-    justify-content: center;
-  } */
-  .about .col-2 p {
-    font-size: 0.85rem;
-    padding: 0.3rem;
-    margin-bottom: 10px;
-    line-height: 1.45rem;
+    justify-content: left;
+    align-content: stretch;
   }
-  .about .button {
+  .about .container .col-2 p {
+    font-size: 0.85rem;
+    line-height: 1.75rem;
+    padding: 0.3rem;
+
+  }
+  /* .about .button {
     margin-top: 1rem;
     font-size: small;
-  }
+  } */
 }
