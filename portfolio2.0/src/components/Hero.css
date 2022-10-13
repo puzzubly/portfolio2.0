@@ -54,7 +54,7 @@
   padding: -3px;
   margin: 0px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 859px) {
   .hero {
     background-color: var(--overlay);
     color: #fff;
