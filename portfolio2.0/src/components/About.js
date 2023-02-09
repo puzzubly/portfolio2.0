@@ -2,7 +2,7 @@ import React from "react";
 import "./About.css";
 import small_pic from "./Images/small_pic.png";
 import { useNavigate } from "react-router-dom";
-import { BiCheckCircle } from "react-icons/bi";
+import { TiVendorAndroid } from "react-icons/ti";
 
 function About() {
   let navigate = useNavigate();
@@ -21,13 +21,15 @@ function About() {
           <div className="col-2-container">
             
             <p>
-            <BiCheckCircle size={22} />  Frontend design and web development
+            <TiVendorAndroid size={22} />  Frontend design + web development
             <br />
-            <BiCheckCircle size={22} />  React JS in an enterprise setting
+            <TiVendorAndroid size={22} />  React JS in an enterprise setting
             <br />
-            <BiCheckCircle size={22} />  Node JS / Typescript
+            <TiVendorAndroid size={22} />  Degree in Graphic Design
             <br />
-            <BiCheckCircle size={22} />  Expreience with AWS Management Console
+            <TiVendorAndroid size={22} />  Experience with AWS Management Console
+            <br />
+            <TiVendorAndroid size={22} />  Node JS / Typescript
             </p>
           </div>
           {/* <button
